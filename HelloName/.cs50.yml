@@ -1,4 +1,6 @@
 check50: 
+  dependencies:
+    - git+https://github.com/cs50/submit50#egg=submit50
   files: &check50_files
     - !exclude "*"
     - !require HelloName.c
