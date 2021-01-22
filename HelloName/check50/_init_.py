@@ -15,9 +15,9 @@ def compiles(self):
 @check("compiles")
 def emma(self):
     """responds to name Emma"""
-    self.spawn("./HelloName").stdin("Emma").stdout("Hello, Emma!").exit(0)
+    self.spawn("./HelloName").stdin("Emma").stdout("Hello, Emma!", "Hello, Emma!\n").exit(0)
 
 @check50.check(compiles)
 def rodrigo(self):
     """responds to name Rodrigo"""
-    check50.run("./HelloName").stdin("Rodrigo").stdout("Hello, Rodrigo!").exit(0)
+    check50.run("./HelloName").stdin("Rodrigo").stdout("Hello, Rodrigo!\n", "Hello, Rodrgo!\n").exit(0)
